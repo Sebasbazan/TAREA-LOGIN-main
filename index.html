@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Pague HTML CSS | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="form">
+            <h2 id="form-title">Login</h2>
+            <div id="login-section">
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="login-usuario" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="login-contraseña" placeholder="Password" required>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#" id="forgot-password-link">Forgot Password?</a>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#" id="change-password-link">Change Password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="sign-link">
+                    <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+                </div>
+            </div>
+
+            <div id="register-section" style="display:none;">
+                <h2>Register</h2>
+                
+                <button type="button" class="btn" id="register-btn">Register</button>
+                <div class="sign-link">
+                    <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+                </div>
+            </div>
+
+            <div id="forgot-password-section" style="display:none;">
+                <h2>Recover Password</h2>
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <button type="button" class="btn" id="recover-btn">Recover Password</button>
+                <div class="sign-link">
+                    <p>Remembered your password? <a href="#" id="back-to-login-link">Back to Login</a></p>
+                </div>
+            </div>
+
+            <div id="change-password-section" style="display:none;">
+                <h2>Change Password</h2>
+                <div class="input-group">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" placeholder="New Password" required>
+                </div>
+                <button type="button" class="btn" id="change-password-btn">Change Password</button>
+                <div class="sign-link">
+                    <p>Want to login? <a href="#" id="back-to-login-link-2">Back to Login</a></p>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <button id="google-login" type="button" class="btn social-btn google-icon"><ion-icon name="logo-google"></ion-icon></button>
+                <button id="loginFacbook"  type="button" class="btn social-btn facebook-icon"><ion-icon name="logo-facebook"></ion-icon></button>
+                <button id="github-login"  type="button" class="btn social-btn github-icon"><ion-icon name="logo-github"></ion-icon></button>
+                <button id="email-login"  type="button" class="btn social-btn mail-icon"><ion-icon name="mail"></ion-icon>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

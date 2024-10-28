@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    position: relative;
+    top: -30px; /* Mueve el marco 20 píxeles hacia arriba */
+    left: -24%; /* Mantén el valor de left según necesites */
+
+    left: -20%; /* Mueve el marco más a la izquierda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px; /* Aumenta el ancho */
+    height: 500px; /* Aumenta la altura */
+    padding: 20px;
+    box-shadow: 0 0 60px #000;
+    border-radius: 10px;
+    background-color: transparent; 
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    width: 320px;
+    margin: 15px 0;
+}
+
+.input-group input {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 10px 0 35px;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.input-group .icon {
+    position: absolute;
+    display: block;
+    left: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 45px;
+}
+
+.forgot-pass {
+    margin: -10px 0 15px;
+}
+
+.forgot-pass a {
+    color: #fff;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #00c2a7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #00c2a7;
+}
+
+.sign-link {
+    font-size: .9em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sign-link p {
+    color: #fff;
+}
+
+.sign-link p a {
+    color: #00c2a7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sign-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los botones de redes sociales en forma circular */
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+}
+
+.google-icon {
+    background-color: #DB4437;
+    color: #fff;
+}
+
+.google-icon:hover {
+    background-color: #b33b2d;
+}
+
+.facebook-icon {
+    background-color: #3B5998;
+    color: #fff;
+}
+
+.facebook-icon:hover {
+    background-color: #2d4373;
+}
+
+.github-icon {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.github-icon:hover {
+    background-color: #222;
+}
